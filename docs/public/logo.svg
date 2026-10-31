@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="snappGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00D166" />
+      <stop offset="100%" stop-color="#00A84D" />
+    </linearGradient>
+    <linearGradient id="laravelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF2D20" />
+      <stop offset="100%" stop-color="#D61F13" />
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="44" fill="#0F172A"/>
+  <!-- Card background -->
+  <rect x="30" y="50" width="140" height="90" rx="16" fill="url(#snappGrad)"/>
+  <rect x="30" y="72" width="140" height="18" fill="#0B803D" opacity="0.4"/>
+  <!-- Chip -->
+  <rect x="48" y="98" width="28" height="20" rx="5" fill="#F8FAFC"/>
+  <!-- Laravel indicator circle -->
+  <circle cx="140" cy="108" r="14" fill="url(#laravelGrad)"/>
+  <path d="M136 102 L145 108 L136 114 Z" fill="#FFFFFF"/>
+</svg>
