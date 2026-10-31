@@ -61,9 +61,7 @@ class ResilienceWorkflowTest extends TestCase
             ], 200),
             // 1st verify times out, 2nd verify succeeds
             'https://api.snapppay.test/api/online/payment/v1/verify' => Http::sequence()
-                ->push(function () {
-                    throw new ConnectionException('Timeout');
-                })
+                ->pushFailedConnection('Timeout')
                 ->push([
                     'successful' => true,
                     'response' => ['transactionId' => 'TX-RETRY-SUCCESS'],
